@@ -55,23 +55,25 @@ Start up the redis server using:
 Checkout the project **raccoon-recommendation** from the SVN Kiolis Repo.
 
 #### Navigate to the folder
-``` $ cd raccoon-recommendation
-```
+
+```$ cd raccoon-recommendation```
 
 #### Install ALL dependencies
-``` $ npm install ```
+
+```$ npm install```
 
 #### Racoon configuration
 Make sure that the configuration file **raccoon-recommendation/node_modules/raccoon/lib/config.js** has the following parameters set:
 
-* **className: 'recipies'** (used as a prefix for the Redis database)
+**className: 'recipies'** (used as a prefix for the Redis database)
 
-* **localSetup: true** (important to make Raccoon take the right port number)
+**localSetup: true** (important to make Raccoon take the right port number)
 
 #### Boot up servers in separate terminal windows
-``` $ redis-server ```
 
-``` $ node node-server.js ```
+```$ redis-server```
+
+```$ node node-server.js```
 
 #### Import recipies
 * Go to [http://localhost:3000/importRecipies](http://)
