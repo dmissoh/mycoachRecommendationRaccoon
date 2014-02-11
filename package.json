@@ -14,7 +14,8 @@
     "csv": "0.3.x",
     "redis": ">=0.8.x",
     "express": "3.x.x",
-    "raccoon": "0.1.9"
+    "raccoon": "0.1.9",
+    "cors": "2.1.1"
   },
   "version": "0.0.1-30",
   "engines": {

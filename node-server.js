@@ -3,7 +3,13 @@ var express = require('express'),
     raccoon = require('raccoon').raccoon(),
     path = require('path'),
     starter = require('./sampleContent/starter.js').starter(),
-    app = express();
+    app = express(),
+    cors = require('cors');
+
+/**
+ * CORS support.
+ */
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
