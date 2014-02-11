@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MyCoach recipe recommendation based on Raccoon
 
 This demo is built on top of the recommendationRaccoon engine. It comes with a sample located in the csv file **sampleContent/recipies.csv**.
@@ -91,9 +90,3 @@ A nice alternative is the **Postman REST Client** [https://chrome.google.com/web
 * [http://localhost:3000/newRating?userId=dima&recipe[id]=recipe3&recipe[like]=liked](http://) (add a new rating for the recipe with the id 'recipe3' done by the user with the 'dima')
 
 * [http://localhost:3000/](http://) (shows a static page served by Node.js)
-=======
-mycoachRecommendationRaccoon
-============================
-
-This demo is built on top of the recommendationRaccoon engine. It comes with a sample located in the csv file sampleContent/recipies.csv.
->>>>>>> 2720429f51dc5f119c4da14284c5f7821b6b6791
