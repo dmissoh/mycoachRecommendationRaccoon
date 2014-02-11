@@ -52,7 +52,8 @@ Start up the redis server using:
 ```$ redis-server```
 
 #### Clone the repo
-Checkout the project **raccoon-recommendation** from the SVN Kiolis Repo.
+
+Clone the project from: [git@github.com:dmissoh/mycoachRecommendationRaccoon.git](http://)
 
 #### Navigate to the folder
 
