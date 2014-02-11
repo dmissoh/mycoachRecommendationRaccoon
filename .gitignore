@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 .DS_Store
 .npmignore
 node_modules
 dumb.rdb
+=======
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+>>>>>>> 2720429f51dc5f119c4da14284c5f7821b6b6791
