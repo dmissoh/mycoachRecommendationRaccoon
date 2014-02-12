@@ -29,9 +29,9 @@ exports.starter = function(){
   };
 
  return {
-    importCSV:function(){
+    importCSV:function(callback){
       csv()
-      .from.path(__dirname+'/recipies.csv', { delimiter: ';', escape: '"' })
+      .from.path(__dirname+'/recipies.csv', { delimiter: ',', escape: '"' })
       .on('record', function(row,index){
         if (index === 0){
           for (var i = 1; i < row.length; i++){
@@ -41,7 +41,8 @@ exports.starter = function(){
           insertRow(row, headers);
         }
       })
-      .on('end', function(){
+      .on('end', function(count){
+        callback(count);
       })
       .on('error', function(error){
         console.log(error.message);

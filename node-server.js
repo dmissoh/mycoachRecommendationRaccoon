@@ -77,8 +77,18 @@ app.get('/recipiesLikes', function(req, res){
 });
 
 app.get('/importRecipies', function(req, res){
-  starter.importCSV();
-  res.send('SUCCESS: recipes Imported');
+
+  // first flush the redis db
+  client.flushdb();
+
+  // then import from csv
+  starter.importCSV(function(count){
+    var replyObj = {};
+    replyObj = {
+        numberOfUsers: count
+    };
+    res.send(200, replyObj);
+  });
 });
 
 app.listen(3000);
